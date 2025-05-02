@@ -19,7 +19,7 @@ A web-based implementation of the popular game show "Who Wants to Be a Millionai
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/igor394/millionaire-game.git
+git clone https://github.com/igor394/millionaire-game-for-headway.git
 cd millionaire-game
 ```
 
