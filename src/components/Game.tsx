@@ -19,8 +19,6 @@ const Game: React.FC<GameProps> = ({ questions, onGameEnd }) => {
     setCurrentQuestionIndex,
     setSelectedAnswer,
     setIsAnswerSubmitted,
-    setFinalPrize,
-    setIsGameWon,
   } = useGameStore();
 
   const [isPrizeSectionVisible, setIsPrizeSectionVisible] = useState(false);
@@ -39,8 +37,6 @@ const Game: React.FC<GameProps> = ({ questions, onGameEnd }) => {
 
       if (!isCorrect) {
         const prizeIndex = Math.max(0, currentQuestionIndex - 1);
-        setFinalPrize(prizeStructure[prizeIndex]);
-        setIsGameWon(false);
         setTimeout(() => {
           onGameEnd(prizeStructure[prizeIndex], false);
         }, 2000);
@@ -49,8 +45,6 @@ const Game: React.FC<GameProps> = ({ questions, onGameEnd }) => {
       }
 
       if (isLastQuestion) {
-        setFinalPrize(prizeStructure[prizeStructure.length - 1]);
-        setIsGameWon(true);
         setTimeout(() => {
           onGameEnd(prizeStructure[prizeStructure.length - 1], true);
         }, 2000);

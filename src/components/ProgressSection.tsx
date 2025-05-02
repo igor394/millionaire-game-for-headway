@@ -24,7 +24,6 @@ const ProgressSection = ({ currentQuestionIndex, isVisible, onClose }: ProgressS
       <button className="close-button" onClick={onClose}>
         <Image src={'close.svg'} alt={'close.svg'} width={24} height={24} />
       </button>
-
       <div className="progress-ladder">
         {prizeStructure.map((prize, index) => (
           <div key={prize} className={'progress-level-wrapper'}>

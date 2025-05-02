@@ -25,7 +25,7 @@ const QuestionSection: React.FC<QuestionSectionProps> = ({
   return (
     <div className={`question-section ${isPrizeSectionVisible ? 'hidden' : ''}`}>
       <div className="question-header">
-        <h2>{currentQuestion.text}</h2>
+        <h2>{currentQuestion?.text}</h2>
         <button
           className="menu-button"
           onClick={onTogglePrizeSection}

@@ -132,6 +132,56 @@ export const gameConfig: Question[] = [
       { id: 'D', text: 'John Glenn', isCorrect: false },
     ],
   },
+  {
+    id: '13',
+    text: 'Which gas do plants absorb from the atmosphere?',
+    answers: [
+      { id: 'A', text: 'Oxygen', isCorrect: false },
+      { id: 'B', text: 'Carbon Dioxide', isCorrect: true },
+      { id: 'C', text: 'Nitrogen', isCorrect: false },
+      { id: 'D', text: 'Hydrogen', isCorrect: false },
+    ],
+  },
+  {
+    id: '14',
+    text: 'How many continents are there on Earth?',
+    answers: [
+      { id: 'A', text: '5', isCorrect: false },
+      { id: 'B', text: '6', isCorrect: false },
+      { id: 'C', text: '7', isCorrect: true },
+      { id: 'D', text: '8', isCorrect: false },
+    ],
+  },
+  {
+    id: '15',
+    text: 'What is the boiling point of water at sea level?',
+    answers: [
+      { id: 'A', text: '90°C', isCorrect: false },
+      { id: 'B', text: '100°C', isCorrect: true },
+      { id: 'C', text: '110°C', isCorrect: false },
+      { id: 'D', text: '120°C', isCorrect: false },
+    ],
+  },
+  {
+    id: '16',
+    text: 'Which language has the most native speakers?',
+    answers: [
+      { id: 'A', text: 'English', isCorrect: false },
+      { id: 'B', text: 'Mandarin Chinese', isCorrect: true },
+      { id: 'C', text: 'Spanish', isCorrect: false },
+      { id: 'D', text: 'Hindi', isCorrect: false },
+    ],
+  },
+  {
+    id: '17',
+    text: 'What part of the plant conducts photosynthesis?',
+    answers: [
+      { id: 'A', text: 'Root', isCorrect: false },
+      { id: 'B', text: 'Stem', isCorrect: false },
+      { id: 'C', text: 'Leaf', isCorrect: true },
+      { id: 'D', text: 'Flower', isCorrect: false },
+    ],
+  },
 ];
 
 export const prizeStructure = [
