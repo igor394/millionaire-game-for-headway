@@ -1,20 +1,10 @@
-'use client';
+import { Suspense } from 'react';
+import GameOver from '@/components/GameOver';
 
-import { useSearchParams } from 'next/navigation';
-import EndScreen from '@/components/EndScreen';
-import useGameStore from '@/store/gameStore';
-
-const FinalPage = () => {
-  const { currentQuestionIndex } = useGameStore();
-  const searchParams = useSearchParams();
-  const prize = Number(searchParams.get('prize'));
-  const isWon = searchParams.get('won') === 'true';
-
+export default function FinalPage() {
   return (
-    <main className="main-container">
-      <EndScreen prize={currentQuestionIndex === 0 ? 0 : prize} isWon={isWon} />
-    </main>
+    <Suspense fallback={null}>
+      <GameOver />
+    </Suspense>
   );
-};
-
-export default FinalPage;
+}
